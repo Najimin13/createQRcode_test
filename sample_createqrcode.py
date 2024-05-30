@@ -1,4 +1,5 @@
 import os
+import requests
 import qrcode
 from PIL import Image
 from flask import Flask
@@ -13,8 +14,9 @@ def index():
    img = qrcode.make("test_createQRcode")
    img.save('qrImage/sample_QRcode.png')
    file_name = os.path.basename('qrImage/sample_QRcode.png')
+   response = requests.get('qrImage/sample_QRcode.png')
    with open(file_name, 'wb') as file:
-    file.write('qrImage/sample_QRcode.png')
+    file.write('response.content')
    
    return ""
   
