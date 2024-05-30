@@ -23,7 +23,7 @@ def index():
    # with open(file_name, 'wb') as file:
    #  file.write('response.content')
    
-   return send_file(img_byte_array, mimetype='image/png', as_attachment=True, attachment_filename='generated_image.png')
+   return send_file(img_byte_array, mimetype='image/png', as_attachment=True, download_name='generated_image.png')
 
 if __name__ == '__main__':
     app.run(debug=True)
