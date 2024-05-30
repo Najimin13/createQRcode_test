@@ -13,7 +13,6 @@ def index():
    img = qrcode.make("test_createQRcode")
    img.save('qrImage/sample_QRcode.png')
    file_name = os.path.basename('qrImage/sample_QRcode.png')
-   res = requests.get(url, stream=True)
    with open(file_name, 'wb') as file:
     file.write(chunk)
    
