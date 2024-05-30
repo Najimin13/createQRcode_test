@@ -13,7 +13,7 @@ def index():
     os.mkdir(new_dir_path)
    img = qrcode.make("test_createQRcode")
    img.save('qrImage/sample_QRcode.png')
-   file_name = os.path.basename('qrImage/sample_QRcode.png')
+   file_name = os.path.basename('https://createqrcode-test.onrender.comqrImage/sample_QRcode.png')
    response = requests.get('qrImage/sample_QRcode.png')
    with open(file_name, 'wb') as file:
     file.write('response.content')
