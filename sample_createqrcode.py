@@ -7,12 +7,16 @@ app = Flask(__name__)
 @app.route('/')
 def index():
    print("start")
+   new_dir_path = 'qrImage/'
+   if not os.path.isdir(new_dir_path):
+    os.mkdir(new_dir_path)
    img = qrcode.make("test_createQRcode")
-   img.save('sample_QRcode.png')
-   if os.path.isfile('sample_QRcode.png'):
-    print("有り")
-else:
-    print("無し")
+   img.save('qrImage/sample_QRcode.png')
+   file_name = os.path.basename('qrImage/sample_QRcode.png')
+   res = requests.get(url, stream=True)
+   with open(file_name, 'wb') as file:
+    file.write(chunk)
+   
    return ""
   
 print("end")
