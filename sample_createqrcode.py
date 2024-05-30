@@ -8,6 +8,6 @@ img.save('sample_QRcode.png')
 
 @app.route('/')
 def index():
-   return "中川美憂"
+   return img.show()
   
 print("end")
