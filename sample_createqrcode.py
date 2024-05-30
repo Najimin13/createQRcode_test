@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+   print("start")
    img = qrcode.make("test_createQRcode")
    img.save('sample_QRcode.png')
    return ""
