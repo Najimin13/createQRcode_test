@@ -14,7 +14,7 @@ def index():
    img.save('qrImage/sample_QRcode.png')
    file_name = os.path.basename('qrImage/sample_QRcode.png')
    with open(file_name, 'wb') as file:
-    file.write(chunk)
+    file.write(file_name)
    
    return ""
   
