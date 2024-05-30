@@ -3,7 +3,7 @@ import requests
 import io
 import qrcode
 from PIL import Image
-from flask import Flask
+from flask import Flask, send_file
 app = Flask(__name__)
 
 @app.route('/')
