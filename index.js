@@ -12,7 +12,7 @@ const options = {
         //nameは必須
         name: 'Cats',
         //keyvaluesは必須ではない
-        keyvalues: {　　　　
+        keyvalues: {
             customKey: 'customValue',
             customKey2: 'customValue2'
         }
