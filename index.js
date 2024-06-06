@@ -10,7 +10,7 @@ const readableStreamForFile = fs.createReadStream('./test_createQRcode.png');
 const options = {
     pinataMetadata: {
         //nameは必須
-        name: 'Cats',
+        name: 'test_createQRcode.png',
         //keyvaluesは必須ではない
         keyvalues: {
             customKey: 'customValue',
