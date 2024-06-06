@@ -28,6 +28,8 @@ def result():
         
 
         subprocess.check_call('node index.js', shell=True)
+        
+        os.remove('test_createQRcode.png')
             
         return render_template('index.html', title='おためし成功？')
         
