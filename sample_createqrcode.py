@@ -5,6 +5,7 @@ import qrcode
 import subprocess
 from PIL import Image
 from flask import Flask, send_file, render_template, request
+import  json
 app = Flask(__name__)
 
 @app.route('/')
@@ -38,8 +39,10 @@ def result():
 	        
 	        q.close()
         os.remove('test_createQRcode.png')
+        
+        getUrl = 'https://gateway.pinata.cloud/ipfs/' + response.json()["IpfsHash"]
             
-        return render_template('index.html', title='おためし成功？')
+        return render_template('index.html', title='おためし成功？', qrurl=getUrl)
         
    if request.method == 'GET':
       return render_template('resultGet.html', title='おためしGET')
