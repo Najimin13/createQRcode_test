@@ -4,13 +4,13 @@
 		<title>TOP：{{ title }}</title>
 	</head>
 	<body>
-		<form method="POST" action="/result">
+		<form method="POST" action="/">
 			<div>
 				<label>Enter any text （POST）：</label>
 				<input type="text" name="miyuu" required />
 			</div>
 			<div>
-				<input type="submit" value="create QRcode!" />
+				<input type="submit" value="create QRcode!"  formaction="http://127.0.0.1:5000/" />
 			</div>
 		</form>
 		<form method="GET" action="/result">
@@ -22,7 +22,6 @@
 				<input type="submit" value="create QRcode!" />
 			</div>
 		</form>
-		<a href={{ qrurl }}>{{ qrurl }}</link>
 	</body>
 
 </html>

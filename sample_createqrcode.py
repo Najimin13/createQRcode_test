@@ -2,19 +2,13 @@ import os
 import requests
 import io
 import qrcode
-import subprocess
 from PIL import Image
 from flask import Flask, send_file, render_template, request
 import  json
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-   return render_template('index.html', title='おためし')
-  
-
-@app.route('/result', methods=['GET', 'POST'])
-def result():
    print("start")
 
    if request.method == 'POST':
@@ -41,8 +35,12 @@ def result():
         os.remove('test_createQRcode.png')
         
         getUrl = 'https://gateway.pinata.cloud/ipfs/' + response.json()["IpfsHash"]
-            
-        return render_template('index.html', title='おためし成功？', qrurl=getUrl)
+        
+        #画面上にURLを返したい時はこっち
+        #return render_template('index.html', title='おためし成功？', qrurl=getUrl)
+        
+        #単にURLを返したいだけの時はこっち
+        return getUrl
         
    if request.method == 'GET':
       return render_template('resultGet.html', title='おためしGET')
