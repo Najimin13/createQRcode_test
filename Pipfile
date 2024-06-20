@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+qrcode = "==7.4.2"
+pillow = "==10.3.0"
+flask = "*"
+gunicorn = "*"
+requests = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"

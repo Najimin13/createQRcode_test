@@ -1,0 +1,56 @@
+('C:\\Users\\小佐野 '
+ '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\sample_createqrcode.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\build\\sample_createqrcode\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\小佐野 '
+   '伸明\\.virtualenvs\\createQRcode_test-WSgGRCZX\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\小佐野 '
+   '伸明\\.virtualenvs\\createQRcode_test-WSgGRCZX\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('sample_createqrcode',
+   'C:\\Users\\小佐野 '
+   '伸明\\Desktop\\NFT_ticket\\createQRcode_test\\sample_createqrcode.py',
+   'PYSOURCE')],
+ 'python312.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
