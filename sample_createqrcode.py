@@ -3,16 +3,19 @@ import requests
 import io
 import qrcode
 from PIL import Image
-from flask import Flask, send_file, render_template, request
-import  json
+from flask import Flask, send_file, render_template, request, jsonify
+import json
+from flask_cors import CORS
 app = Flask(__name__)
+
+CORS(app)  # CORSを全てのエンドポイントに対して有効にする
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
    print("start")
 
    if request.method == 'POST':
-        name = request.form['miyuu']
+        name = request.get_json()
         img = qrcode.make(name)
         img_byte_array = io.BytesIO()
         img.save(img_byte_array, format='PNG')
@@ -38,6 +41,8 @@ def index():
         
         #画面上にURLを返したい時はこっち
         #return render_template('index.html', title='おためし成功？', qrurl=getUrl)
+        
+        print("getUrl:" + getUrl)
         
         #単にURLを返したいだけの時はこっち
         return getUrl
